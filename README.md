@@ -122,6 +122,28 @@ Router 5:
 
 
 
+## 4 Analisis de mensajes OSPF
+
+El router 4 le manda un hello al router 3. Vemos que el área id es la que configuramos con los comandos para los routers y el network mask es el correspondiente al router.
+
+![image](https://github.com/user-attachments/assets/332c0c36-2912-4e9f-894f-69988e709cc3)
+
+
+![image](https://github.com/user-attachments/assets/2bddb5cd-d22e-4da7-97f6-d32cf28d143f)
+
+
+Luego, en el router 2, se analizo el trafico en forma mas detallada
+
+En base a la dirección de ip más alta, se elige al router 1 como DR y al router 2 como BDR. Además, se negocia quien actúa como master y quien slave antes del intercambio de DB-packets
+
+![image](https://github.com/user-attachments/assets/6014342b-0cee-4c21-a13e-f1494c4ecb57)
+
+Luego se hace el intercambio de DBD (Database Description) con un resumen de su LSDB. 
+
+![image](https://github.com/user-attachments/assets/4281002d-5ab4-497c-af99-2c85974026bd)
+
+Cuando el intercambio termina, se envía un mensaje LSR (Link-State Request) solicitando las LSAs que aún no tiene o que están desactualizadas en su LSDB. El vecino envía esas LSAs dentro de un paquete LSU.
+Una vez que las LSDB se encuentran sincronizadas, el intercambio termina y la conexión se marca como full. 
 
 
 
