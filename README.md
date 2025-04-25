@@ -36,7 +36,9 @@ Se ha diseñado de red según las especificaciones del TP3 utilizando Cisco Pack
 
 ![image](https://github.com/user-attachments/assets/bd37b9e0-6a30-400e-a4a8-85a9b98948bd)
 
+
 ## Plan de Direccionamiento IP
+
 
 ## Tabla de Direccionamiento
 
