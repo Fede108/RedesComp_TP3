@@ -222,7 +222,37 @@ En cambio en esta imagen, le pusimos que el coste en el enlace entre el router 5
 ![image](https://github.com/user-attachments/assets/2df95617-a8f1-48b9-b63a-0cff940b89f9)
 
 
+# 9. Redistribuir una ruta OSPF predeterminada
 
+## a) y b) Configurar una dirección de loopback en R1 para simular un enlace a un proveedor de servicios de Internet (ISP). Configurar una ruta estática predeterminada en el router R1.
+
+![image](https://github.com/user-attachments/assets/58b26bc6-6736-4819-90c6-faa79d27024f)
+
+En estas imagenes podemos ver cómo se configuró una ruta estática predeterminada en el router R1. Con esto le decimos: “cualquier destino que no conozca, sácalo por la interface Loopback0(nuestra loopback)”.
+
+## c) Incluir la ruta estática predeterminada en las actualizaciones de OSPF enviadas desde el router R1.
+
+![image](https://github.com/user-attachments/assets/62104c2a-1461-4c4e-b0c9-8e190c288297)
+
+Verificamos que en R1 que se generó el LSA externo.
+
+Link State ID: 0.0.0.0 → es una ruta por defecto.
+
+Advertising Router: 1.1.1.1 → R1 está anunciándola.
+
+Metric Type: 2 → es un costo externo tipo E2, el valor por defecto.
+
+Routing Bit Set → indica que la ruta es válida y está en la tabla de enrutamiento.
+
+Verificamos que se vean en los demás routers:
+
+Router 2:
+
+![image](https://github.com/user-attachments/assets/11d670a6-1d51-4154-b502-7088aaeb185a)
+
+Router 3:
+
+![image](https://github.com/user-attachments/assets/4c15fac5-9bb7-4820-b187-b2cede206b90)
 
 
 
