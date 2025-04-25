@@ -197,6 +197,30 @@ Esto muestra las rutas aprendidas específicamente por OSPF. Si ves entradas que
 
 ![image](https://github.com/user-attachments/assets/c768a62b-b495-4197-932c-1d7dbdaa7e02)
 
+# 8. Configurar el costo de OSPF 
+
+El tráfico desde h4 (10.0.2.1) hacia h1 (10.0.1.1) puede ir por dos trayectos. Por defecto, todos los enlaces tienen coste=1, así que OSPF elegirá el camino con menor número de saltos (R4–R3–R2–R1).
+
+Este es el gigabitethernet0/0 del router 4 conectado al router 5. Costo 1.
+
+![image](https://github.com/user-attachments/assets/1491f834-6e51-464e-bd0c-1482360df221)
+
+Aqui es desde el router 5 al router 3 y también tiene costo 1. 
+
+![image](https://github.com/user-attachments/assets/a1b26b8c-b222-41d8-8757-eed9491556e3)
+
+Configuro del router 4 al 5 para que el coste sea 100. Lo mismo se hizo para el router 5 al 3.
+
+![image](https://github.com/user-attachments/assets/d47efbc6-5331-4b67-9535-c0287f281520)
+
+En esta imagen vemos como el enlace del router 4 al 3 y del router 5 al 3 el costo es 100, va de h4 al router 4, en el paso 2 va del router 4 al router 3, en el paso 3 va del router 3 al router 2 y en el paso 4 llega a h1.
+
+![image](https://github.com/user-attachments/assets/41d2b9c9-16fc-40c6-9d84-7dce2be0cfbf)
+
+En cambio en esta imagen, le pusimos que el coste en el enlace entre el router 5 al router 3 es de 1 otra vez, por lo que en el paso 2 envés de ir del router 4 al 3, va del router 4 al router 5 y de ahí al 3.
+
+![image](https://github.com/user-attachments/assets/2df95617-a8f1-48b9-b63a-0cff940b89f9)
+
 
 
 
