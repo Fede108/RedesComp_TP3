@@ -1,15 +1,25 @@
 # Trabajo práctico 3: Evaluación de performance en redes y ruteo interno dinámico Open Shortest Path First (OSPF)
 
-### Integrantes del Grupo:
+*Facultad de Ciencias Exactas, Fisicas y Naturales de la U.N.C**
 
-Federico Cechich
+**Redes de Computadoras**
 
-Juan Manuel Ferrero
+**Profesores**
+- Santiago M. Henn
+- Facundo N. Oliva C.
+  
+**Nombre del grupo : Kiritoro** 
 
-Luciano trachta
+**Integrantes**
+- Federico Cechich
+- Juan Manuel Ferrero
+- Luciano Trachta
 
-Profesor: SANTIAGO MARTIN HENN
 
+**24 de Abril de 2025**
+
+
+**Información de contacto**:  _juan.manuel.ferrero@mi.unc.edu.ar_, _federico.cechich@mi.unc.edu.ar_, _ltrachta@mi.unc.edu.ar_ 
 
 # 1. Introducción Teórica a OSPF
 
