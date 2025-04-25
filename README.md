@@ -263,11 +263,12 @@ Cuando se pierde la conexión entre R2 y R1 (`192.168.1.0/30`), ambos routers ma
 
 #### b) Falla en el enlace R2 – R3
 
-La caída del enlace entre R2 y R3 (`192.168.2.0/30`) provoca que ambos routers bajen la adyacencia y actualicen sus LSDB. Como R2 era el ABR entre Áreas 0 y 1, se rompe la conectividad entre ellas. Internamente, cada área sigue operativa, pero los hosts de un área no pueden comunicarse con los del otro.
+R2 pierde la interfaz hacia R3 (`192.168.2.0/30`) y ambos routers bajan su adyacencia OSPF. Se eliminan las rutas correspondientes de sus LSDB y se recalcula la topología (SPF) en toda la red. Aunque R2 ya no tiene conexión con el Área 1, este no era el ABR; R3 cumple ese rol. Ambas áreas siguen funcionando internamente, pero se pierde la conectividad entre ellas.
 
 #### c) Falla en el enlace R2 – S1 (LAN1)
 
 Al perderse la conexión entre R2 y el switch S1, la red `10.0.1.0/24` desaparece localmente. R2 actualiza su Router-LSA y propaga el cambio. R1 elimina la red de su LSDB y tabla de rutas. Los hosts h1–h3 quedan sin gateway, pero el resto de la red no se ve afectado.
+
 
 # 11. ¿La tabla RIB (Routing Information Base) es lo mismo que la tabla FIB (Forwarding Information Base)? Justificar con capturas del práctico.
 
