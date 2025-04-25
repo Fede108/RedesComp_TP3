@@ -255,6 +255,21 @@ Router 3:
 ![image](https://github.com/user-attachments/assets/4c15fac5-9bb7-4820-b187-b2cede206b90)
 
 
+# 10) Fallas de conectividad y su impacto en OSPF
+
+#### a) Falla en el enlace R2 – R1
+
+Cuando se pierde la conexión entre R2 y R1 (`192.168.1.0/30`), ambos routers marcan la interfaz como `down/down`. OSPF detecta la caída de la vecindad, se eliminan las LSAs entre ambos y se recalcula la topología (SPF). El Área 0 se particiona: R1 y sus hosts (h1–h3) pierden acceso al Área 1, aunque esta última sigue funcionando normalmente.
+
+#### b) Falla en el enlace R2 – R3
+
+La caída del enlace entre R2 y R3 (`192.168.2.0/30`) provoca que ambos routers bajen la adyacencia y actualicen sus LSDB. Como R2 era el ABR entre Áreas 0 y 1, se rompe la conectividad entre ellas. Internamente, cada área sigue operativa, pero los hosts de un área no pueden comunicarse con los del otro.
+
+#### c) Falla en el enlace R2 – S1 (LAN1)
+
+Al perderse la conexión entre R2 y el switch S1, la red `10.0.1.0/24` desaparece localmente. R2 actualiza su Router-LSA y propaga el cambio. R1 elimina la red de su LSDB y tabla de rutas. Los hosts h1–h3 quedan sin gateway, pero el resto de la red no se ve afectado.
+
+
 
 
 
