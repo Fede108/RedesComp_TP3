@@ -168,6 +168,37 @@ Router 1:
 ![image](https://github.com/user-attachments/assets/b33708f7-e4ab-411a-a9e4-598e780e9720)
 
 
+# 7) Verificar el funcionamiento de OSPF:
+
+## a) En el router R2 consultar la información acerca de los vecinos R1 y R3 de OSPF.
+
+![image](https://github.com/user-attachments/assets/d40bfea2-e8ac-4d19-8d46-ce1507e47189)
+
+![image](https://github.com/user-attachments/assets/7501ede6-a664-471e-b7bb-3d4a15062e53)
+
+## b) En el router R2 consultar la información sobre las operaciones del protocolo de enrutamiento.
+
+ show ip protocols
+ 
+Este comando te muestra:
+
+- Qué protocolo de enrutamiento se está usando (en este caso OSPF).
+- Las redes que está anunciando.
+- Los tiempos de actualización.
+- Las interfaces involucradas.
+- El router ID.
+
+
+En router 3:
+
+![image](https://github.com/user-attachments/assets/1a979997-33b4-4da7-a145-92e2d5803a47)
+
+Esto muestra las rutas aprendidas específicamente por OSPF. Si ves entradas que comienzan con una "O", significa que están siendo aprendidas por OSPF.
+
+![image](https://github.com/user-attachments/assets/c768a62b-b495-4197-932c-1d7dbdaa7e02)
+
+
+
 
 
 
