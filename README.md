@@ -269,7 +269,49 @@ La caída del enlace entre R2 y R3 (`192.168.2.0/30`) provoca que ambos routers 
 
 Al perderse la conexión entre R2 y el switch S1, la red `10.0.1.0/24` desaparece localmente. R2 actualiza su Router-LSA y propaga el cambio. R1 elimina la red de su LSDB y tabla de rutas. Los hosts h1–h3 quedan sin gateway, pero el resto de la red no se ve afectado.
 
+# 11. ¿La tabla RIB (Routing Information Base) es lo mismo que la tabla FIB (Forwarding Information Base)? Justificar con capturas del práctico.
 
+
+No son lo mismo las tablas RIB y FIB.
+
+## RIB (Routing Information Base)
+
+Es la tabla de rutas «lógicas» que construye el router a partir de los protocolos de enrutamiento (OSPF, EIGRP, RIP, rutas estáticas, etc.).
+
+Se ve con el comando:
+
+### show ip route
+
+Incluye:
+- Código del protocolo (O, D, C, S…)
+- Distancia administrativa
+- Métrica
+- Redes directamente conectadas y aprendidas
+- 
+## FIB (Forwarding Information Base)
+
+Es la tabla optimizada que usa el hardware (o el motor de reenvío) para mandar paquetes al siguiente salto.
+
+Normalmente se obtiene con:
+
+### show ip cef
+
+Contiene sólo:
+- Prefijo de red
+- Interfaz de salida
+- Next-hop
+- 
+No muestra ni distancias administrativas ni códigos de protocolo.
+
+## Justificación práctica en router 1:
+
+## RIB:
+
+![image](https://github.com/user-attachments/assets/f3f09a10-c875-4039-a2ce-356814babaff)
+
+## FIB:
+
+![image](https://github.com/user-attachments/assets/92cc7181-8963-4a50-a265-419a3c92234c)
 
 
 
