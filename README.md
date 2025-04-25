@@ -287,7 +287,7 @@ Incluye:
 - Distancia administrativa
 - Métrica
 - Redes directamente conectadas y aprendidas
-- 
+  
 ## FIB (Forwarding Information Base)
 
 Es la tabla optimizada que usa el hardware (o el motor de reenvío) para mandar paquetes al siguiente salto.
@@ -300,7 +300,7 @@ Contiene sólo:
 - Prefijo de red
 - Interfaz de salida
 - Next-hop
-- 
+  
 No muestra ni distancias administrativas ni códigos de protocolo.
 
 ## Justificación práctica en router 1:
