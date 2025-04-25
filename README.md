@@ -151,7 +151,15 @@ Una vez que las LSDB se encuentran sincronizadas, el intercambio termina y la co
 ![image](https://github.com/user-attachments/assets/284ebb3c-6fc1-4e2a-89e0-921d6f5f6c63)
 
 
+# b) Leer las entradas de la Base de Datos de Estado de Enlace (LSDB) en cada uno de los routers.
 
+show ip ospf database
+
+Este comando te muestra todos los LSAs que el router conoce, y forman el "mapa de la red" de OSPF.
+
+Router 1:
+
+![image](https://github.com/user-attachments/assets/3920f99a-de22-4d69-80c6-b978b22d7828)
 
 ## 6. Se definio las áreas de OSPF de la siguiente manera: R1 y R2 están en el área A, R4 y R5 están en el área B y R3 actua como router frontera
 
