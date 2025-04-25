@@ -72,6 +72,70 @@ Se ha diseñado de red según las especificaciones del TP3 utilizando Cisco Pack
 | R1 loopback    | 255.255.255.255    | R1          | —                | 1.1.1.1      |
 
 
+# 3. Configurar cada router para que utilice el protocolo OSPF y verificar la conexión punto a punto entre los dispositivos enlazados. Verificar que las tablas de enrutamiento contienen rutas OSPF.
+
+Primero se realizó la configuración de cada router para que utilice el protocolo OSPF.
+
+## Verificación punto a punto
+
+Router 1:
+
+![image](https://github.com/user-attachments/assets/bc948217-0637-45fe-899c-e9bcda9a33c0)
+
+Router 2:
+
+![image](https://github.com/user-attachments/assets/31ef80f2-71ea-48db-94ab-db56ea35701f)
+
+Router 3:
+
+![image](https://github.com/user-attachments/assets/db366545-f1fb-4dc1-99cb-324da853928f)
+
+Router 4:
+
+![image](https://github.com/user-attachments/assets/820b56e7-1c3d-4fa8-9328-ffbfa5247166)
+
+Router 5:
+
+![image](https://github.com/user-attachments/assets/1d6d9da5-8454-4fa7-9e01-e41dbba94009)
+
+## Verifico tablas de enrutamiento que tengan OSPF
+
+Router 1:
+
+![image](https://github.com/user-attachments/assets/4934ec24-5dca-4edf-a112-92bb9e3be35b)
+
+Router 2:
+
+![image](https://github.com/user-attachments/assets/e6225ffb-b9b9-469b-9829-ec829145fbe6)
+
+Router 3:
+
+![image](https://github.com/user-attachments/assets/87ce0c91-7854-4fef-92d2-6a27822a33bd)
+
+Router 4:
+
+![image](https://github.com/user-attachments/assets/1579eaef-f50a-45a9-911c-170983dcf932)
+
+Router 5:
+
+![image](https://github.com/user-attachments/assets/daaf317f-a6fc-4572-86fc-288c92488bd5)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
