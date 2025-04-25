@@ -40,8 +40,6 @@ Se ha diseñado de red según las especificaciones del TP3 utilizando Cisco Pack
 ## Plan de Direccionamiento IP
 
 
-## Tabla de Direccionamiento
-
 | Red            | Máscara Subred     | Dispositivo | Subred          | IP           |
 |----------------|--------------------|-------------|------------------|--------------|
 | LAN 1          | 255.255.255.0      | h1          | 10.0.1.0/24      | 10.0.1.1     |
