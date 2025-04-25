@@ -148,8 +148,16 @@ Una vez que las LSDB se encuentran sincronizadas, el intercambio termina y la co
 
 # 5. a) Notificar las redes conectadas directamente al router.
 
+![image](https://github.com/user-attachments/assets/284ebb3c-6fc1-4e2a-89e0-921d6f5f6c63)
 
 
+
+
+## 6. Se definio las áreas de OSPF de la siguiente manera: R1 y R2 están en el área A, R4 y R5 están en el área B y R3 actua como router frontera
+
+![image](https://github.com/user-attachments/assets/347c7275-efdc-498e-b0d5-040e2cee26ce)
+
+![image](https://github.com/user-attachments/assets/b33708f7-e4ab-411a-a9e4-598e780e9720)
 
 
 
