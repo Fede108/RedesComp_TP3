@@ -122,7 +122,7 @@ Router 5:
 
 
 
-## 4 Analisis de mensajes OSPF
+# 4 Analisis de mensajes OSPF
 
 El router 4 le manda un hello al router 3. Vemos que el área id es la que configuramos con los comandos para los routers y el network mask es el correspondiente al router.
 
@@ -145,6 +145,8 @@ Luego se hace el intercambio de DBD (Database Description) con un resumen de su 
 Cuando el intercambio termina, se envía un mensaje LSR (Link-State Request) solicitando las LSAs que aún no tiene o que están desactualizadas en su LSDB. El vecino envía esas LSAs dentro de un paquete LSU.
 Una vez que las LSDB se encuentran sincronizadas, el intercambio termina y la conexión se marca como full. 
 
+
+# 5. a) Notificar las redes conectadas directamente al router.
 
 
 
